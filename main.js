@@ -77,6 +77,7 @@ bot.on("message", function(message) {
 			return;
 		case "invite":
 			message.channel.sendMessage("Invite the bot here: /n https://discordapp.com/api/oauth2/authorize?client_id=417727716800987156&permissions=8&scope=bot");
+			return;
 		default:
 			message.channel.sendMessage("Invalid command");
 	}
