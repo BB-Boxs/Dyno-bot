@@ -75,6 +75,8 @@ bot.on("message", function(message) {
 		case "info":
 			message.channel.sendMessage("This is the real Dyno bot that's in development by BB-Box#4072. Add him if you need any help.");
 			return;
+		case "invite":
+			message.channel.sendMessage("Invite the bot here: /n https://discordapp.com/api/oauth2/authorize?client_id=417727716800987156&permissions=8&scope=bot");
 		default:
 			message.channel.sendMessage("Invalid command");
 	}
