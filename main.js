@@ -72,6 +72,8 @@ bot.on("message", function(message) {
 				message.channel.sendMessage("Can't read that, sorry!");
 			}
 			return;
+		case "info":
+			message.channel.sendMessage("This is the real Dyno bot that's in development by BB-Box#4072. Add him if you need any help.");
 		default:
 			message.channel.sendMessage("Invalid command i think");
 	}
