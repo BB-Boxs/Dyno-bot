@@ -21,7 +21,7 @@ var fortunes = [
 bot.on("ready", function() {
 	console.log("ready");
 	
-	bot.user.setStatus("inactive");
+	bot.user.setStatus("idle");
 	bot.user.setGame("dynobot.net|?help");
 });
 
