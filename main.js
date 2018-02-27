@@ -74,8 +74,9 @@ bot.on("message", function(message) {
 			return;
 		case "info":
 			message.channel.sendMessage("This is the real Dyno bot that's in development by BB-Box#4072. Add him if you need any help.");
+			return;
 		default:
-			message.channel.sendMessage("Invalid command i think");
+			message.channel.sendMessage("Invalid command");
 	}
 });
 
