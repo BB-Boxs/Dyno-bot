@@ -53,7 +53,7 @@ bot.on("message", function(message) {
 
 	if (!message.content.startsWith(prefix)) return;
 
-var default = ["Invalid command", "Not a command that exists", "Wrong command", "Error"];
+var errors = ["Invalid command", "Not a command that exists", "Wrong command", "Error"];
 
 
 	var args = message.content.substring(prefix.length).split(" ");
@@ -82,7 +82,7 @@ var default = ["Invalid command", "Not a command that exists", "Wrong command", 
 			message.channel.sendMessage("Invite the bot here: /n https://discordapp.com/api/oauth2/authorize?client_id=417727716800987156&permissions=8&scope=bot");
 			return;
 		default:
-			message.channel.sendMessage(default[Math.floor(Math.random() * default.length)]);
+			message.channel.sendMessage(errors[Math.floor(Math.random() * errors.length)]);
 	}
 });
 
